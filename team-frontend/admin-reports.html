@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FraudGuard - Reports & Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">FraudGuard</div>
+<nav>
+    <a href="user-dashboard.html">Dashboard</a>
+</nav>
+    <a href="profile.html" class="profile-link">
+    <span class="profile-icon">👤</span>
+    <span>Profile</span>
+</a>
+
+</header>
+
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <h3>Admin Menu</h3>
+
+        <a href="admin.html">🏠 Dashboard</a>
+
+        <a href="admin-users.html">
+            👥 User Management
+        </a>
+
+        <a href="admin-transactions.html">
+            💳 Transaction Monitoring
+        </a>
+
+        <a href="admin-alerts.html">
+            🚨 Flagged Transactions
+        </a>
+
+        <a href="admin-reports.html" class="active">
+            📊 Reports & Detection
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="dashboard-content">
+
+        <div class="dashboard-header">
+
+            <h1>Reports & Detection</h1>
+
+            <p>
+                Monitor fraud detection rules, risk analysis
+                and detection engine performance.
+            </p>
+
+            <span class="demo-badge">DEMO DATA</span>
+
+        </div>
+
+
+        <!-- AI DETECTION STATUS -->
+
+        <div class="reports-ai-banner">
+
+            <div class="reports-ai-left">
+
+                <div class="reports-ai-icon">
+                    🤖
+                </div>
+
+                <div>
+
+                    <strong>
+                        FraudGuard AI Detection Engine
+                    </strong>
+
+                    <p>
+                        AI-assisted risk analysis and rule-based
+                        fraud detection system.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="reports-engine-status">
+
+                <span></span>
+
+                ENGINE ONLINE
+
+            </div>
+
+        </div>
+
+
+        <!-- OVERVIEW -->
+
+        <section class="reports-overview">
+
+            <div class="reports-overview-card">
+
+                <div class="reports-card-icon">
+                    🎯
+                </div>
+
+                <div>
+
+                    <span>Detection Accuracy</span>
+
+                    <strong>94%</strong>
+
+                    <small>Demo model performance</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="reports-overview-card">
+
+                <div class="reports-card-icon">
+                    ⚙️
+                </div>
+
+                <div>
+
+                    <span>Active Rules</span>
+
+                    <strong>8</strong>
+
+                    <small>Detection rules enabled</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="reports-overview-card">
+
+                <div class="reports-card-icon">
+                    🚨
+                </div>
+
+                <div>
+
+                    <span>Cases Detected</span>
+
+                    <strong>37</strong>
+
+                    <small>Flagged transactions</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="reports-overview-card">
+
+                <div class="reports-card-icon">
+                    ⚠️
+                </div>
+
+                <div>
+
+                    <span>False Positives</span>
+
+                    <strong>4</strong>
+
+                    <small>Demo value</small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DETECTION ENGINE -->
+
+        <section class="reports-grid">
+
+
+            <!-- MODEL STATUS -->
+
+            <div class="reports-panel">
+
+                <div class="reports-panel-header">
+
+                    <div>
+
+                        <h2>Detection Engine</h2>
+
+                        <p>
+                            Current fraud analysis components
+                        </p>
+
+                    </div>
+
+                    <span class="reports-live-badge">
+                        ● ACTIVE
+                    </span>
+
+                </div>
+
+
+                <div class="engine-list">
+
+                    <div class="engine-row">
+
+                        <div class="engine-row-icon">
+                            🔍
+                        </div>
+
+                        <div>
+
+                            <strong>Rule Engine</strong>
+
+                            <p>
+                                Predefined fraud rules
+                            </p>
+
+                        </div>
+
+                        <span class="engine-active">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="engine-row">
+
+                        <div class="engine-row-icon">
+                            📈
+                        </div>
+
+                        <div>
+
+                            <strong>Risk Scoring</strong>
+
+                            <p>
+                                Transaction risk calculation
+                            </p>
+
+                        </div>
+
+                        <span class="engine-active">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="engine-row">
+
+                        <div class="engine-row-icon">
+                            🧠
+                        </div>
+
+                        <div>
+
+                            <strong>Pattern Analysis</strong>
+
+                            <p>
+                                Unusual activity detection
+                            </p>
+
+                        </div>
+
+                        <span class="engine-active">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="engine-row">
+
+                        <div class="engine-row-icon">
+                            🤖
+                        </div>
+
+                        <div>
+
+                            <strong>Detection Model</strong>
+
+                            <p>
+                                Demo Rule-Based Model
+                            </p>
+
+                        </div>
+
+                        <span class="engine-demo">
+                            DEMO
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RISK DISTRIBUTION -->
+
+            <div class="reports-panel">
+
+                <div class="reports-panel-header">
+
+                    <div>
+
+                        <h2>Risk Distribution</h2>
+
+                        <p>
+                            Current transaction risk levels
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="risk-distribution">
+
+
+                    <div class="risk-distribution-row">
+
+                        <div class="risk-distribution-label">
+
+                            <span>Safe</span>
+
+                            <strong>96%</strong>
+
+                        </div>
+
+                        <div class="distribution-bar">
+
+                            <div
+                                class="distribution-progress safe-progress"
+                                style="width:96%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="risk-distribution-row">
+
+                        <div class="risk-distribution-label">
+
+                            <span>Suspicious</span>
+
+                            <strong>3%</strong>
+
+                        </div>
+
+                        <div class="distribution-bar">
+
+                            <div
+                                class="distribution-progress suspicious-progress"
+                                style="width:3%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="risk-distribution-row">
+
+                        <div class="risk-distribution-label">
+
+                            <span>High Risk</span>
+
+                            <strong>1%</strong>
+
+                        </div>
+
+                        <div class="distribution-bar">
+
+                            <div
+                                class="distribution-progress high-progress"
+                                style="width:1%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="risk-note">
+
+                    <span>🤖</span>
+
+                    <p>
+                        Most transactions are currently classified
+                        as low risk by the detection engine.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DETECTION CONFIGURATION -->
+
+        <section class="reports-panel configuration-panel">
+
+            <div class="reports-panel-header">
+
+                <div>
+
+                    <h2>Detection Configuration</h2>
+
+                    <p>
+                        Rules currently used by FraudGuard
+                    </p>
+
+                </div>
+
+                <span class="config-count">
+                    8 RULES
+                </span>
+
+            </div>
+
+
+            <div class="configuration-grid">
+
+
+                <div class="configuration-card">
+
+                    <div class="configuration-top">
+
+                        <span>💰</span>
+
+                        <span class="rule-status">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                    <h3>High Transaction Amount</h3>
+
+                    <p>
+                        Transactions above
+                        <strong>₹40,000</strong>
+                        receive increased risk score.
+                    </p>
+
+                </div>
+
+
+                <div class="configuration-card">
+
+                    <div class="configuration-top">
+
+                        <span>📍</span>
+
+                        <span class="rule-status">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                    <h3>Unknown Location</h3>
+
+                    <p>
+                        Unknown transaction locations
+                        increase the risk level.
+                    </p>
+
+                </div>
+
+
+                <div class="configuration-card">
+
+                    <div class="configuration-top">
+
+                        <span>🔄</span>
+
+                        <span class="rule-status">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                    <h3>Unusual Transfer</h3>
+
+                    <p>
+                        Suspicious transfer patterns
+                        are monitored by the engine.
+                    </p>
+
+                </div>
+
+
+                <div class="configuration-card">
+
+                    <div class="configuration-top">
+
+                        <span>⏱️</span>
+
+                        <span class="rule-status">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                    <h3>Rapid Transactions</h3>
+
+                    <p>
+                        Multiple transactions within
+                        a short period are monitored.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DETECTION SUMMARY -->
+
+        <section class="reports-panel">
+
+            <div class="reports-panel-header">
+
+                <div>
+
+                    <h2>Detection Summary</h2>
+
+                    <p>
+                        Rule performance based on demo transactions
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Detection Rule</th>
+
+                            <th>Triggered Cases</th>
+
+                            <th>Risk Impact</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                High Transaction Amount
+                            </td>
+
+                            <td>
+                                12
+                            </td>
+
+                            <td>
+
+                                <span class="report-risk high">
+                                    HIGH
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status safe">
+                                    Active
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Unknown Location
+                            </td>
+
+                            <td>
+                                8
+                            </td>
+
+                            <td>
+
+                                <span class="report-risk medium">
+                                    MEDIUM
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status safe">
+                                    Active
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Unusual Transfer
+                            </td>
+
+                            <td>
+                                17
+                            </td>
+
+                            <td>
+
+                                <span class="report-risk high">
+                                    HIGH
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status safe">
+                                    Active
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI INSIGHT -->
+
+        <div class="reports-ai-insight">
+
+            <div class="reports-insight-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <strong>
+                    AI Detection Insight
+                </strong>
+
+                <p>
+                    High transaction amount and unusual transfer
+                    patterns are currently the strongest demo
+                    indicators contributing to elevated risk scores.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FRAUDBOT -->
+
+        <div class="fraudbot-wrapper">
+
+            <div class="fraudbot-message">
+
+                <div class="fraudbot-header">
+
+                    <div class="fraudbot-avatar">
+                        🤖
+                    </div>
+
+                    <div class="fraudbot-info">
+
+                        <strong>FraudBot AI</strong>
+
+                        <span>
+                            <i></i>
+                            Detection Assistant
+                        </span>
+
+                    </div>
+
+                    <button class="fraudbot-close">
+                        ×
+                    </button>
+
+                </div>
+
+
+                <div class="fraudbot-line"></div>
+
+
+                <div class="fraudbot-content">
+
+                    <div class="bot-status">
+
+                        <span class="bot-check">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Detection engine is active
+                            </strong>
+
+                            <p>
+                                8 fraud detection rules are currently enabled.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="bot-insight">
+
+                        <span>⚡</span>
+
+                        <p>
+                            Strongest indicator:
+                            <strong>
+                                Unusual Transfer
+                            </strong>
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="admin-transactions.html"
+                        class="bot-action">
+
+                        View Transactions
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="fraudbot-button"
+                title="FraudBot AI">
+
+                <div class="robot-face">
+
+                    <span class="robot-eye"></span>
+                    <span class="robot-eye"></span>
+
+                </div>
+
+                <span class="bot-online-dot"></span>
+
+            </button>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

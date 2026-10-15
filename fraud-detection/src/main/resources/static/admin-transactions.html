@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FraudGuard - Transaction Monitoring</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="logo">FraudGuard</div>
+<nav>
+    <a href="user-dashboard.html">Dashboard</a>
+</nav>
+
+    <a href="profile.html" class="profile-link">
+    <span class="profile-icon">👤</span>
+    <span>Profile</span>
+</a>
+
+</header>
+
+
+<div class="dashboard-layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <h3>Admin Menu</h3>
+
+        <a href="admin.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="admin-users.html">
+            👥 User Management
+        </a>
+
+        <a href="admin-transactions.html" class="active">
+            💳 Transaction Monitoring
+        </a>
+
+        <a href="admin-alerts.html">
+            🚨 Flagged Transactions
+        </a>
+
+        <a href="admin-reports.html">
+            📊 Reports & Detection
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="dashboard-content">
+
+
+        <!-- HEADER -->
+
+        <div class="dashboard-header">
+
+            <h1>Transaction Monitoring</h1>
+
+            <p>
+                Monitor transactions and analyze fraud risk.
+            </p>
+
+            <span class="demo-badge">
+                DEMO DATA
+            </span>
+
+        </div>
+
+
+        <!-- AI MONITOR -->
+
+        <div class="transaction-ai-banner">
+
+            <div class="transaction-ai-left">
+
+                <div class="transaction-ai-icon">
+                    🤖
+                </div>
+
+                <div>
+
+                    <strong>
+                        FraudGuard AI Transaction Monitor
+                    </strong>
+
+                    <p>
+                        Continuous transaction risk analysis
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-monitor-status">
+
+                <span></span>
+
+                MONITORING
+
+            </div>
+
+        </div>
+
+
+        <!-- SUMMARY -->
+
+        <section class="transaction-summary-grid">
+
+
+            <div class="transaction-summary-card">
+
+                <div class="transaction-summary-icon">
+                    💳
+                </div>
+
+                <div>
+
+                    <span>Total Transactions</span>
+
+                    <strong>1,248</strong>
+
+                    <small>Processed</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-summary-card">
+
+                <div class="transaction-summary-icon safe-bg">
+                    ✓
+                </div>
+
+                <div>
+
+                    <span>Safe</span>
+
+                    <strong>1,211</strong>
+
+                    <small>Low-risk transactions</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-summary-card">
+
+                <div class="transaction-summary-icon warning-bg">
+                    ⚠
+                </div>
+
+                <div>
+
+                    <span>Suspicious</span>
+
+                    <strong>25</strong>
+
+                    <small>Require review</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-summary-card">
+
+                <div class="transaction-summary-icon risk-bg">
+                    🚨
+                </div>
+
+                <div>
+
+                    <span>High Risk</span>
+
+                    <strong>12</strong>
+
+                    <small>Priority cases</small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- FILTERS -->
+
+        <section class="transaction-controls">
+
+            <div>
+
+                <h2>Transaction Activity</h2>
+
+                <p>
+                    Search and review processed transactions.
+                </p>
+
+            </div>
+
+
+            <div class="transaction-filter">
+
+                <input
+                    type="text"
+                    placeholder="Search transaction ID or user..."
+                >
+
+                <select>
+
+                    <option>All Transactions</option>
+
+                    <option>Safe</option>
+
+                    <option>Suspicious</option>
+
+                    <option>High Risk</option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- TABLE -->
+
+        <section class="recent-section">
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Transaction ID</th>
+
+                            <th>User</th>
+
+                            <th>Amount</th>
+
+                            <th>Type</th>
+
+                            <th>Location</th>
+
+                            <th>Risk Score</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>TXN1001</td>
+
+                            <td>Isha</td>
+
+                            <td>₹2,500</td>
+
+                            <td>Payment</td>
+
+                            <td>Delhi</td>
+
+                            <td>
+
+                                <span class="transaction-risk low">
+                                    12/100
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status safe">
+                                    Safe
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>TXN1002</td>
+
+                            <td>Rahul</td>
+
+                            <td>₹18,500</td>
+
+                            <td>Transfer</td>
+
+                            <td>Mumbai</td>
+
+                            <td>
+
+                                <span class="transaction-risk high">
+                                    87/100
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status suspicious">
+                                    Suspicious
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>TXN1003</td>
+
+                            <td>Aman</td>
+
+                            <td>₹1,200</td>
+
+                            <td>Payment</td>
+
+                            <td>Noida</td>
+
+                            <td>
+
+                                <span class="transaction-risk low">
+                                    18/100
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status safe">
+                                    Safe
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>TXN1004</td>
+
+                            <td>Priya</td>
+
+                            <td>₹45,000</td>
+
+                            <td>Transfer</td>
+
+                            <td>Unknown</td>
+
+                            <td>
+
+                                <span class="transaction-risk critical">
+                                    96/100
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status fraud">
+                                    High Risk
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>TXN1005</td>
+
+                            <td>Isha</td>
+
+                            <td>₹7,500</td>
+
+                            <td>Payment</td>
+
+                            <td>Noida</td>
+
+                            <td>
+
+                                <span class="transaction-risk medium">
+                                    34/100
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status safe">
+                                    Safe
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI INSIGHT -->
+
+        <section class="transaction-ai-insight">
+
+            <div class="transaction-insight-icon">
+                ⚡
+            </div>
+
+            <div>
+
+                <strong>
+                    AI Transaction Insight
+                </strong>
+
+                <p>
+                    TXN1004 has the highest risk score of
+                    96/100. The large transaction amount,
+                    transfer type and unknown location
+                    contributed to the elevated risk.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECURITY ACTIVITY -->
+
+        <section class="transaction-activity">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Monitoring Activity</h2>
+
+                    <p>
+                        Recent transaction analysis events
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="transaction-activity-list">
+
+
+                <div class="transaction-activity-item">
+
+                    <div class="transaction-activity-icon danger">
+                        🚨
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            High-risk transaction detected
+                        </strong>
+
+                        <p>
+                            TXN1004 received a risk score of
+                            96/100.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        2 min ago
+                    </span>
+
+                </div>
+
+
+                <div class="transaction-activity-item">
+
+                    <div class="transaction-activity-icon warning">
+                        ⚠️
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Suspicious transaction identified
+                        </strong>
+
+                        <p>
+                            TXN1002 requires administrative review.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        15 min ago
+                    </span>
+
+                </div>
+
+
+                <div class="transaction-activity-item">
+
+                    <div class="transaction-activity-icon safe">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Transaction verified
+                        </strong>
+
+                        <p>
+                            TXN1001 passed the security checks.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        32 min ago
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<!-- FRAUDBOT -->
+
+<div class="fraudbot-wrapper">
+
+    <div class="fraudbot-message">
+
+        <div class="fraudbot-header">
+
+            <div class="fraudbot-avatar">
+                🤖
+            </div>
+
+            <div class="fraudbot-info">
+
+                <strong>
+                    FraudBot AI
+                </strong>
+
+                <span>
+                    <i></i>
+                    Monitoring Assistant
+                </span>
+
+            </div>
+
+            <button class="fraudbot-close">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="fraudbot-line"></div>
+
+
+        <div class="fraudbot-content">
+
+            <div class="bot-status">
+
+                <span class="bot-check">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        Transaction scan complete
+                    </strong>
+
+                    <p>
+                        12 high-risk cases require attention.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="bot-insight">
+
+                <span>⚡</span>
+
+                <p>
+                    Highest risk:
+                    <strong>TXN1004 · 96/100</strong>
+                </p>
+
+            </div>
+
+
+            <a href="admin-alerts.html"
+               class="bot-action">
+
+                Review Flagged Cases
+
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <button class="fraudbot-button"
+            title="FraudBot AI">
+
+        <div class="robot-face">
+
+            <span class="robot-eye"></span>
+
+            <span class="robot-eye"></span>
+
+        </div>
+
+        <span class="bot-online-dot"></span>
+
+    </button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FraudGuard - Transaction History</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="logo">
+        FraudGuard
+    </div>
+<nav>
+    <a href="user-dashboard.html">Dashboard</a>
+</nav>
+    <a href="profile.html" class="profile-link">
+    <span class="profile-icon">👤</span>
+    <span>Profile</span>
+</a>
+
+</header>
+
+
+<div class="page-layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <h3>User Menu</h3>
+
+        <a href="user-dashboard.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="transaction.html">
+            💳 Transaction Details
+        </a>
+
+        <a href="history.html" class="active">
+            📋 Transaction History
+        </a>
+
+        <a href="alerts.html">
+            🚨 Suspicious Alerts
+        </a>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="page-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="history-header">
+
+            <div>
+
+                <h1>
+                    Transaction History
+                </h1>
+
+                <p>
+                    Review your previous transactions and security status.
+                </p>
+
+            </div>
+
+            <span class="demo-badge">
+                DEMO DATA
+            </span>
+
+        </div>
+
+
+
+        <!-- AI MONITOR -->
+
+        <div class="history-ai-banner">
+
+            <div class="history-ai-icon">
+                🤖
+            </div>
+
+            <div class="history-ai-text">
+
+                <strong>
+                    FraudGuard AI Monitor
+                </strong>
+
+                <p>
+                    Your transaction history is continuously checked
+                    for unusual activity.
+                </p>
+
+            </div>
+
+            <div class="history-ai-status">
+                <span></span>
+                MONITORING
+            </div>
+
+        </div>
+
+
+
+        <!-- HISTORY SUMMARY -->
+
+        <section class="history-summary">
+
+
+            <div class="history-summary-card">
+
+                <div class="summary-icon">
+                    💳
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Transactions
+                    </span>
+
+                    <strong>
+                        24
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="history-summary-card">
+
+                <div class="summary-icon">
+                    🛡️
+                </div>
+
+                <div>
+
+                    <span>
+                        Safe
+                    </span>
+
+                    <strong>
+                        21
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="history-summary-card">
+
+                <div class="summary-icon">
+                    ⚠️
+                </div>
+
+                <div>
+
+                    <span>
+                        Flagged
+                    </span>
+
+                    <strong>
+                        3
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="history-summary-card">
+
+                <div class="summary-icon">
+                    📊
+                </div>
+
+                <div>
+
+                    <span>
+                        Avg. Risk
+                    </span>
+
+                    <strong>
+                        28/100
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FILTER AREA -->
+
+        <div class="history-controls">
+
+            <div class="history-search">
+
+                🔍
+
+                <input
+                    type="text"
+                    placeholder="Search transaction ID..."
+                >
+
+            </div>
+
+
+            <select>
+
+                <option>
+                    All Transactions
+                </option>
+
+                <option>
+                    Safe
+                </option>
+
+                <option>
+                    Suspicious
+                </option>
+
+                <option>
+                    High Risk
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- TRANSACTION TABLE -->
+
+        <div class="table-container history-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Transaction ID
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                        <th>
+                            Type
+                        </th>
+
+                        <th>
+                            Location
+                        </th>
+
+                        <th>
+                            Date
+                        </th>
+
+                        <th>
+                            AI Risk
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+
+                <tbody>
+
+
+                    <!-- TXN1001 -->
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                TXN1001
+                            </strong>
+                        </td>
+
+                        <td>
+                            ₹2,500
+                        </td>
+
+                        <td>
+                            Payment
+                        </td>
+
+                        <td>
+                            Delhi
+                        </td>
+
+                        <td>
+                            04 Oct 2026
+                        </td>
+
+                        <td>
+
+                            <span class="history-risk low">
+                                12/100
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status safe">
+                                Safe
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- TXN1002 -->
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                TXN1002
+                            </strong>
+                        </td>
+
+                        <td>
+                            ₹18,500
+                        </td>
+
+                        <td>
+                            Transfer
+                        </td>
+
+                        <td>
+                            Mumbai
+                        </td>
+
+                        <td>
+                            03 Oct 2026
+                        </td>
+
+                        <td>
+
+                            <span class="history-risk high">
+                                87/100
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status suspicious">
+                                Suspicious
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- TXN1003 -->
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                TXN1003
+                            </strong>
+                        </td>
+
+                        <td>
+                            ₹1,200
+                        </td>
+
+                        <td>
+                            Payment
+                        </td>
+
+                        <td>
+                            Noida
+                        </td>
+
+                        <td>
+                            02 Oct 2026
+                        </td>
+
+                        <td>
+
+                            <span class="history-risk low">
+                                18/100
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status safe">
+                                Safe
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- TXN1004 -->
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                TXN1004
+                            </strong>
+                        </td>
+
+                        <td>
+                            ₹45,000
+                        </td>
+
+                        <td>
+                            Transfer
+                        </td>
+
+                        <td>
+                            Unknown
+                        </td>
+
+                        <td>
+                            01 Oct 2026
+                        </td>
+
+                        <td>
+
+                            <span class="history-risk critical">
+                                96/100
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status fraud">
+                                High Risk
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- AI INSIGHT -->
+
+        <div class="history-insight">
+
+            <div class="insight-robot">
+                🤖
+            </div>
+
+            <div>
+
+                <strong>
+                    AI Security Insight
+                </strong>
+
+                <p>
+                    TXN1004 has the highest risk score in your
+                    recent history. Large amount and unknown
+                    location contributed to the elevated risk.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- FRAUDBOT -->
+
+<div class="fraudbot-wrapper">
+
+    <div class="fraudbot-message">
+
+        <div class="fraudbot-title">
+
+            🤖 FraudBot
+
+            <span>
+                ● Online
+            </span>
+
+        </div>
+
+        <p>
+            I found 3 transactions that may require
+            your attention.
+        </p>
+
+        <a href="alerts.html">
+            Review Alerts →
+        </a>
+
+    </div>
+
+
+    <button
+        class="fraudbot-button"
+        title="FraudBot"
+    >
+        🤖
+    </button>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

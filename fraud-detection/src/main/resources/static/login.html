@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FraudGuard - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FraudGuard</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<section class="login-section">
+
+    <h1>Login</h1>
+    <p class="login-subtitle">Select your account type</p>
+
+    <div class="login-tabs">
+        <button type="button" id="userTab" class="tab-btn active">User</button>
+        <button type="button" id="adminTab" class="tab-btn">Admin</button>
+    </div>
+
+    <div class="login-box">
+
+        <!-- USER LOGIN -->
+        <div id="userLogin">
+            <div class="login-icon">👤</div>
+            <h2>User Login</h2>
+            <p class="login-description">Login to access your account.</p>
+
+            <form id="userLoginForm">
+                <label>Email or Username</label>
+                <input type="text" id="userEmail" placeholder="Enter your email or username" required>
+
+                <label>Password</label>
+                <input type="password" id="userPassword" placeholder="Enter your password" required>
+
+                <button type="submit" class="submit-btn">Login</button>
+
+                <p id="userMessage"></p>
+            </form>
+        </div>
+
+        <!-- ADMIN LOGIN -->
+        <div id="adminLogin" class="hidden">
+            <div class="login-icon">🛡️</div>
+            <h2>Admin Login</h2>
+            <p class="login-description">Login to manage the fraud detection system.</p>
+
+            <form id="adminLoginForm">
+                <label>Admin Email or Username</label>
+                <input type="text" id="adminEmail" placeholder="Enter admin email or username" required>
+
+                <label>Admin Password</label>
+                <input type="password" id="adminPassword" placeholder="Enter admin password" required>
+
+                <button type="submit" class="submit-btn">Login as Admin</button>
+
+                <p id="adminMessage"></p>
+            </form>
+        </div>
+
+    </div>
+
+    <p class="register-text">
+        Don't have an account?
+        <a href="register.html">Register here</a>
+    </p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

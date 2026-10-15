@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FraudGuard - Flagged Transactions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">FraudGuard</div>
+<nav>
+    <a href="user-dashboard.html">Dashboard</a>
+</nav>
+<a href="profile.html" class="profile-link">
+    <span class="profile-icon">👤</span>
+    <span>Profile</span>
+</a>
+</header>
+
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h3>Admin Menu</h3>
+
+        <a href="admin.html">🏠 Dashboard</a>
+        <a href="admin-users.html">👥 User Management</a>
+        <a href="admin-transactions.html">💳 Transaction Monitoring</a>
+        <a href="admin-alerts.html">🚨 Flagged Transactions</a>
+        <a href="admin-reports.html">📊 Reports & Detection</a>
+
+    </aside>
+
+
+    <main class="dashboard-content">
+
+        <div class="dashboard-header">
+
+            <h1>Flagged Transactions</h1>
+
+            <p>Review suspicious and high-risk transactions.</p>
+
+            <span class="demo-badge">DEMO DATA</span>
+
+        </div>
+
+
+        <div class="alert-list">
+
+
+            <div class="alert-card">
+
+                <div class="alert-icon">⚠️</div>
+
+                <div class="alert-content">
+
+                    <h2>Suspicious Transaction</h2>
+
+                    <p>
+                        Transaction TXN1002 from Rahul
+                        has been flagged due to an unusual
+                        transfer amount of ₹18,500.
+                    </p>
+
+                    <span>
+                        03 Oct 2026 • Medium Risk
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="alert-card high-risk">
+
+                <div class="alert-icon">🚨</div>
+
+                <div class="alert-content">
+
+                    <h2>High Risk Transaction</h2>
+
+                    <p>
+                        Transaction TXN1004 from Priya
+                        involves ₹45,000 and an unknown
+                        location.
+                    </p>
+
+                    <span>
+                        01 Oct 2026 • High Risk
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="alert-card">
+
+                <div class="alert-icon">⚠️</div>
+
+                <div class="alert-content">
+
+                    <h2>Unusual Transfer</h2>
+
+                    <p>
+                        Transaction TXN0998 has been flagged
+                        because of unusual transfer activity.
+                    </p>
+
+                    <span>
+                        29 Sep 2026 • Medium Risk
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

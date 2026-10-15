@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FraudGuard - Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FraudGuard</div>
+<nav>
+    <a href="user-dashboard.html">Dashboard</a>
+</nav>
+    <a href="profile.html" class="profile-link">
+    <span class="profile-icon">👤</span>
+    <span>Profile</span>
+</a>
+</header>
+
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h3>Admin Menu</h3>
+
+        <a href="admin.html" class="active">🏠 Dashboard</a>
+        <a href="admin-users.html">👥 User Management</a>
+        <a href="admin-transactions.html">💳 Transaction Monitoring</a>
+        <a href="admin-alerts.html">🚨 Flagged Transactions</a>
+        <a href="admin-reports.html">📊 Reports & Detection</a>
+
+    </aside>
+
+
+    <main class="dashboard-content">
+
+        <!-- HEADER -->
+
+        <div class="dashboard-header">
+
+            <h1>Admin Dashboard</h1>
+
+            <p>
+                Monitor users, transactions and fraud detection activity.
+            </p>
+
+            <span class="demo-badge">DEMO DATA</span>
+
+        </div>
+
+
+        <!-- AI SYSTEM STATUS -->
+
+        <div class="admin-ai-status">
+
+            <div class="admin-ai-left">
+
+                <div class="admin-ai-icon">
+                    🤖
+                </div>
+
+                <div>
+                    <strong>FraudGuard AI Detection Engine</strong>
+                    <p>Real-time fraud monitoring and risk analysis</p>
+                </div>
+
+            </div>
+
+            <div class="admin-system-online">
+                <span></span>
+                SYSTEM ONLINE
+            </div>
+
+        </div>
+
+
+        <!-- STATS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card admin-stat-card">
+
+                <div class="admin-stat-top">
+                    <h3>Total Users</h3>
+                    <span>👥</span>
+                </div>
+
+                <div class="stat-value">156</div>
+
+                <p>Registered users</p>
+
+            </div>
+
+
+            <div class="stat-card admin-stat-card">
+
+                <div class="admin-stat-top">
+                    <h3>Total Transactions</h3>
+                    <span>💳</span>
+                </div>
+
+                <div class="stat-value">1,248</div>
+
+                <p>Transactions processed</p>
+
+            </div>
+
+
+            <div class="stat-card admin-stat-card">
+
+                <div class="admin-stat-top">
+                    <h3>Flagged Cases</h3>
+                    <span>🚨</span>
+                </div>
+
+                <div class="stat-value">37</div>
+
+                <p>Suspicious transactions</p>
+
+            </div>
+
+
+            <div class="stat-card admin-stat-card">
+
+                <div class="admin-stat-top">
+                    <h3>High Risk Cases</h3>
+                    <span>⚠️</span>
+                </div>
+
+                <div class="stat-value">12</div>
+
+                <p>Require attention</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI RISK OVERVIEW -->
+
+        <section class="admin-overview-grid">
+
+            <div class="admin-analysis-card">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h2>AI Risk Overview</h2>
+                        <p>Current fraud detection activity</p>
+                    </div>
+
+                    <span class="monitoring-badge">
+                        ● MONITORING
+                    </span>
+
+                </div>
+
+
+                <div class="risk-overview-content">
+
+                    <div class="risk-score-circle">
+
+                        <strong>28</strong>
+
+                        <span>/ 100</span>
+
+                        <small>Avg. Risk</small>
+
+                    </div>
+
+
+                    <div class="risk-details">
+
+                        <div class="risk-row">
+                            <span>Safe Transactions</span>
+                            <strong class="safe-text">96%</strong>
+                        </div>
+
+                        <div class="risk-row">
+                            <span>Suspicious Activity</span>
+                            <strong class="warning-text">3%</strong>
+                        </div>
+
+                        <div class="risk-row">
+                            <span>High Risk Activity</span>
+                            <strong class="danger-text">1%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-system-card">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h2>Detection Engine</h2>
+                        <p>Fraud analysis status</p>
+                    </div>
+
+                    <span class="engine-icon">⚙️</span>
+
+                </div>
+
+
+                <div class="engine-item">
+
+                    <span>Rule Engine</span>
+
+                    <strong class="engine-active">
+                        ACTIVE
+                    </strong>
+
+                </div>
+
+
+                <div class="engine-item">
+
+                    <span>Risk Scoring</span>
+
+                    <strong class="engine-active">
+                        ACTIVE
+                    </strong>
+
+                </div>
+
+
+                <div class="engine-item">
+
+                    <span>Pattern Analysis</span>
+
+                    <strong class="engine-active">
+                        ACTIVE
+                    </strong>
+
+                </div>
+
+
+                <div class="engine-item">
+
+                    <span>Model Status</span>
+
+                    <strong class="engine-demo">
+                        DEMO
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT TRANSACTIONS -->
+
+        <section class="recent-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Recent Transactions</h2>
+                    <p>Latest transaction monitoring activity</p>
+                </div>
+
+                <a href="admin-transactions.html"
+                   class="view-all-btn">
+                    View All →
+                </a>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Transaction ID</th>
+                            <th>User</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                            <th>Risk Score</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>TXN1001</td>
+
+                            <td>Isha</td>
+
+                            <td>₹2,500</td>
+
+                            <td>Payment</td>
+
+                            <td>
+                                <span class="admin-risk low">
+                                    12/100
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status safe">
+                                    Safe
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>TXN1002</td>
+
+                            <td>Rahul</td>
+
+                            <td>₹18,500</td>
+
+                            <td>Transfer</td>
+
+                            <td>
+                                <span class="admin-risk high">
+                                    87/100
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status suspicious">
+                                    Suspicious
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>TXN1004</td>
+
+                            <td>Priya</td>
+
+                            <td>₹45,000</td>
+
+                            <td>Transfer</td>
+
+                            <td>
+                                <span class="admin-risk critical">
+                                    96/100
+                                </span>
+                            </td>
+
+                            <td>
+                                <span class="status fraud">
+                                    High Risk
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECURITY ACTIVITY -->
+
+        <section class="admin-activity">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Recent Security Activity</h2>
+                    <p>Latest actions detected by FraudGuard</p>
+                </div>
+
+            </div>
+
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+
+                    <div class="activity-icon danger">
+                        🚨
+                    </div>
+
+                    <div>
+                        <strong>High-risk transaction detected</strong>
+                        <p>
+                            TXN1004 received a risk score of 96/100.
+                        </p>
+                    </div>
+
+                    <span>2 min ago</span>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon warning">
+                        ⚠️
+                    </div>
+
+                    <div>
+                        <strong>Suspicious transfer identified</strong>
+                        <p>
+                            TXN1002 requires further review.
+                        </p>
+                    </div>
+
+                    <span>15 min ago</span>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon safe">
+                        ✓
+                    </div>
+
+                    <div>
+                        <strong>Transaction verified</strong>
+                        <p>
+                            TXN1001 passed the security checks.
+                        </p>
+                    </div>
+
+                    <span>32 min ago</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ADMIN ACTIONS -->
+
+        <section class="quick-actions">
+
+            <h2>Admin Actions</h2>
+
+            <div class="action-grid">
+
+                <a href="admin-users.html"
+                   class="action-card">
+
+                    <span>👥</span>
+
+                    <h3>Manage Users</h3>
+
+                    <p>
+                        View and manage registered users.
+                    </p>
+
+                </a>
+
+
+                <a href="admin-transactions.html"
+                   class="action-card">
+
+                    <span>💳</span>
+
+                    <h3>Monitor Transactions</h3>
+
+                    <p>
+                        Monitor all financial transactions.
+                    </p>
+
+                </a>
+
+
+                <a href="admin-alerts.html"
+                   class="action-card">
+
+                    <span>🚨</span>
+
+                    <h3>Flagged Cases</h3>
+
+                    <p>
+                        Review suspicious transactions.
+                    </p>
+
+                </a>
+
+
+                <a href="admin-reports.html"
+                   class="action-card">
+
+                    <span>📊</span>
+
+                    <h3>Reports & Detection</h3>
+
+                    <p>
+                        View detection rules and reports.
+                    </p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<!-- FRAUDBOT -->
+
+<div class="fraudbot-wrapper">
+
+    <div class="fraudbot-message">
+
+        <div class="fraudbot-title">
+
+            🤖 FraudBot
+
+            <span>● Online</span>
+
+        </div>
+
+        <p>
+            12 high-risk cases require admin attention.
+            Review flagged transactions for further analysis.
+        </p>
+
+        <a href="admin-alerts.html">
+            Review Cases →
+        </a>
+
+    </div>
+
+
+    <button class="fraudbot-button"
+            title="FraudBot">
+
+        🤖
+
+    </button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

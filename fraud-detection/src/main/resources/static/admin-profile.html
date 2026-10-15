@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FraudGuard - Admin Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="user-navbar">
+
+    <div class="logo">
+        FraudGuard
+    </div>
+
+
+    <nav class="user-nav">
+
+        <a href="admin.html">
+            Dashboard
+        </a>
+
+        <a href="admin-profile.html" class="active">
+            Profile
+        </a>
+
+    </nav>
+    
+
+</header>
+
+
+
+<main class="profile-page">
+
+
+    <div class="profile-header">
+
+        <div class="profile-icon">
+            🛡️
+        </div>
+
+        <div>
+
+            <h1>Admin Profile</h1>
+
+            <p>
+                Manage administrator account
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <section class="profile-card">
+
+
+        <div class="profile-info">
+
+            <label>Name</label>
+
+            <p id="profileName">
+                Admin Officer
+            </p>
+
+        </div>
+
+
+
+        <div class="profile-info">
+
+            <label>Email</label>
+
+            <p id="profileEmail">
+                admin@fraudguard.com
+            </p>
+
+        </div>
+
+
+
+        <div class="profile-info">
+
+            <label>Admin ID</label>
+
+            <p id="adminId">
+                FG-ADM-001
+            </p>
+
+        </div>
+
+
+
+        <div class="profile-info">
+
+            <label>Role</label>
+
+            <p id="adminRole">
+                System Administrator
+            </p>
+
+        </div>
+
+
+
+        <div class="profile-info">
+
+            <label>Department</label>
+
+            <p id="adminDepartment">
+                Fraud Detection & Security
+            </p>
+
+        </div>
+
+
+
+        <div class="profile-info">
+
+            <label>Access Level</label>
+
+            <p id="adminAccess">
+                Full Access
+            </p>
+
+        </div>
+
+
+
+        <div class="profile-buttons">
+
+            <button
+                class="edit-btn"
+                id="editProfileBtn">
+
+                Edit Profile
+
+            </button>
+
+
+            <button
+                class="change-password-btn"
+                id="changePasswordBtn">
+
+                Change Password
+
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- CHANGE PASSWORD MODAL -->
+
+<div
+    class="password-modal"
+    id="passwordModal">
+
+
+    <div class="password-box">
+
+
+        <button
+            class="close-password"
+            id="closePassword">
+
+            ×
+
+        </button>
+
+
+        <h2>
+            Change Password
+        </h2>
+
+
+        <p class="password-subtitle">
+
+            Update your administrator password
+
+        </p>
+
+
+        <label>
+            Current Password
+        </label>
+
+
+        <input
+            type="password"
+            id="currentPassword"
+            placeholder="Enter current password"
+        >
+
+
+
+        <label>
+            New Password
+        </label>
+
+
+        <input
+            type="password"
+            id="newPassword"
+            placeholder="Enter new password"
+        >
+
+
+
+        <label>
+            Confirm New Password
+        </label>
+
+
+        <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm new password"
+        >
+
+
+
+        <button
+            class="password-save-btn"
+            id="savePasswordBtn">
+
+            Update Password
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FraudGuard - Suspicious Alerts</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        FraudGuard
+    </div>
+<nav>
+    <a href="user-dashboard.html">Dashboard</a>
+</nav>
+
+    <a href="profile.html" class="profile-link">
+    <span class="profile-icon">👤</span>
+    <span>Profile</span>
+</a>
+</header>
+
+
+<div class="page-layout">
+
+    <aside class="sidebar">
+
+        <h3>User Menu</h3>
+
+        <a href="user-dashboard.html">🏠 Dashboard</a>
+
+        <a href="transaction.html">💳 Transaction Details</a>
+
+        <a href="history.html">📋 Transaction History</a>
+
+        <a href="alerts.html">🚨 Suspicious Alerts</a>
+
+    </aside>
+
+
+    <main class="page-content">
+
+        <h1>
+            Suspicious Alerts
+        </h1>
+
+        <p>
+            Review transactions flagged by the fraud detection system.
+        </p>
+
+        <span class="demo-badge">
+            DEMO DATA
+        </span>
+
+
+        <div class="alert-list">
+
+
+            <div class="alert-card">
+
+                <div class="alert-icon">
+                    ⚠️
+                </div>
+
+                <div class="alert-content">
+
+                    <h2>
+                        Suspicious Transaction Detected
+                    </h2>
+
+                    <p>
+                        Transaction TXN1002 for ₹18,500
+                        was flagged for unusual activity.
+                    </p>
+
+                    <span>
+                        03 Oct 2026
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="alert-card high-risk">
+
+                <div class="alert-icon">
+                    🚨
+                </div>
+
+                <div class="alert-content">
+
+                    <h2>
+                        High Risk Transaction
+                    </h2>
+
+                    <p>
+                        Transaction TXN1004 for ₹45,000
+                        requires immediate review.
+                    </p>
+
+                    <span>
+                        01 Oct 2026
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

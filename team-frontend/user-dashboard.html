@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FraudGuard - User Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <button id="menuButton" class="menu-toggle" type="button" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="logo">FraudGuard</div>
+
+        <nav>
+            <a href="user-dashboard.html">Dashboard</a>
+        </nav>
+
+        <a href="profile.html" class="profile-link">
+            <span class="profile-icon">👤</span>
+            <span>Profile</span>
+        </a>
+
+    </header>
+
+
+    <!-- OVERLAY -->
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+            <h3>User Menu</h3>
+            <button id="closeSidebar" class="sidebar-close" type="button">✕</button>
+        </div>
+
+        <a href="user-dashboard.html" class="active">🏠 Dashboard</a>
+        <a href="transaction.html">💳 Transaction Details</a>
+        <a href="history.html">📋 Transaction History</a>
+        <a href="alerts.html">🚨 Suspicious Alerts</a>
+
+    </aside>
+
+
+    <div class="dashboard-layout">
+
+        <!-- MAIN CONTENT -->
+
+        <main class="dashboard-content">
+
+            <!-- DASHBOARD HEADER -->
+
+            <div class="dashboard-header">
+
+                <div>
+                    <h1>Welcome, <span id="welcomeName">User</span> 👋</h1>
+                    <p>Here's an overview of your account activity.</p>
+                </div>
+
+                <span class="demo-badge">DEMO DATA</span>
+
+            </div>
+
+
+            <!-- AI SYSTEM STATUS -->
+
+            <div class="ai-system-status">
+
+                <div class="ai-status-left">
+
+                    <div class="ai-pulse">🤖</div>
+
+                    <div>
+                        <strong>AI Detection System</strong>
+                        <p>FraudGuard Risk Engine</p>
+                    </div>
+
+                </div>
+
+                <div class="ai-status-online">
+                    <span></span>
+                    SYSTEM ONLINE
+                </div>
+
+            </div>
+
+
+            <!-- SECURITY STATUS -->
+
+            <section class="security-status">
+
+                <div class="security-info">
+
+                    <div class="security-icon">🛡️</div>
+
+                    <div>
+                        <h3>Account Security</h3>
+                        <p>Your account activity is mostly normal.</p>
+                    </div>
+
+                </div>
+
+                <div class="security-score">
+
+                    <span>Security Score</span>
+
+                    <strong>82<span>/100</span></strong>
+
+                    <div class="score-bar">
+                        <div class="score-progress"></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- STATISTICS -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <h3>Total Transactions</h3>
+                    <div class="stat-value" id="totalTxn">0</div>
+                    <p>Transactions processed</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Suspicious Transactions</h3>
+                    <div class="stat-value" id="suspiciousTxn">0</div>
+                    <p>Transactions flagged</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Security Alerts</h3>
+                    <div class="stat-value" id="alertCount">0</div>
+                    <p>Alerts requiring attention</p>
+                </div>
+
+            </section>
+
+
+            <!-- RECENT TRANSACTIONS -->
+
+            <section class="recent-section">
+
+                <h2>Recent Transactions</h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>Amount</th>
+                                <th>Type</th>
+                                <th>Date</th>
+                                <th>Risk Score</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="recentTxnBody">
+                            <tr>
+                                <td colspan="6">Loading...</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECURITY ACTIVITY + ANALYSIS -->
+
+            <section class="dashboard-two-column">
+
+                <div class="activity-card">
+
+                    <h2>Recent Security Activity</h2>
+
+                    <div class="activity-item">
+                        <span class="activity-icon safe-icon">✓</span>
+                        <div>
+                            <strong>Transaction Verified</strong>
+                            <p>TXN1003 was successfully processed.</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <span class="activity-icon warning-icon">!</span>
+                        <div>
+                            <strong>Suspicious Transaction</strong>
+                            <p>TXN1002 was flagged for review.</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <span class="activity-icon safe-icon">✓</span>
+                        <div>
+                            <strong>Transaction Processed</strong>
+                            <p>TXN1001 was successfully processed.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-card">
+
+                    <h2>Latest Fraud Analysis</h2>
+
+                    <div class="analysis-id">
+                        Transaction: <strong>TXN1002</strong>
+                    </div>
+
+                    <div class="analysis-score">
+                        <span>Risk Score</span>
+                        <strong>87/100</strong>
+                    </div>
+
+                    <div class="analysis-status">
+                        ⚠ Suspicious Transaction
+                    </div>
+
+                    <h4>Detection Reasons</h4>
+
+                    <ul>
+                        <li>Transaction amount exceeds threshold</li>
+                        <li>Unusual transaction pattern detected</li>
+                    </ul>
+
+                    <p class="analysis-note">
+                        Please review this transaction carefully.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- QUICK ACTIONS -->
+
+            <section class="quick-actions">
+
+                <h2>Quick Actions</h2>
+
+                <div class="action-grid">
+
+                    <a href="transaction.html" class="action-card">
+                        <span>🔍</span>
+                        <h3>Check Transaction</h3>
+                        <p>Submit a transaction for analysis.</p>
+                    </a>
+
+                    <a href="history.html" class="action-card">
+                        <span>📋</span>
+                        <h3>Transaction History</h3>
+                        <p>View all your previous transactions.</p>
+                    </a>
+
+                    <a href="alerts.html" class="action-card">
+                        <span>🚨</span>
+                        <h3>Suspicious Alerts</h3>
+                        <p>Review flagged transactions.</p>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- FRAUDBOT -->
+
+    <div class="fraudbot-wrapper">
+
+        <div class="fraudbot-message">
+
+            <div class="fraudbot-title">
+                🤖 FraudBot
+                <span>● Online</span>
+            </div>
+
+            <p>
+                Your account looks mostly secure.
+                <br>
+                2 alerts need your attention.
+            </p>
+
+            <a href="alerts.html">View Alerts →</a>
+
+        </div>
+
+        <button class="fraudbot-button" title="FraudBot" type="button">🤖</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

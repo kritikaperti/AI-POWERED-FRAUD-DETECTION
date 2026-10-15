@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FraudGuard - User Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="logo">FraudGuard</div>
+<nav>
+    <a href="user-dashboard.html">Dashboard</a>
+</nav>
+
+    <a href="profile.html" class="profile-link">
+    <span class="profile-icon">👤</span>
+    <span>Profile</span>
+</a>
+</header>
+
+
+<div class="dashboard-layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <h3>Admin Menu</h3>
+
+        <a href="admin.html">🏠 Dashboard</a>
+
+        <a href="admin-users.html" class="active">
+            👥 User Management
+        </a>
+
+        <a href="admin-transactions.html">
+            💳 Transaction Monitoring
+        </a>
+
+        <a href="admin-alerts.html">
+            🚨 Flagged Transactions
+        </a>
+
+        <a href="admin-reports.html">
+            📊 Reports & Detection
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="dashboard-content">
+
+
+        <!-- HEADER -->
+
+        <div class="dashboard-header">
+
+            <h1>User Management</h1>
+
+            <p>
+                View registered users and monitor account security.
+            </p>
+
+            <span class="demo-badge">DEMO DATA</span>
+
+        </div>
+
+
+        <!-- AI USER SECURITY -->
+
+        <div class="users-ai-banner">
+
+            <div class="users-ai-left">
+
+                <div class="users-ai-icon">
+                    🤖
+                </div>
+
+                <div>
+
+                    <strong>
+                        FraudGuard User Security Monitor
+                    </strong>
+
+                    <p>
+                        AI-assisted account activity and risk monitoring
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="users-monitor-status">
+
+                <span></span>
+
+                MONITORING
+
+            </div>
+
+        </div>
+
+
+        <!-- USER STATS -->
+
+        <section class="user-summary-grid">
+
+
+            <div class="user-summary-card">
+
+                <div class="user-summary-icon">
+                    👥
+                </div>
+
+                <div>
+
+                    <span>Total Users</span>
+
+                    <strong>156</strong>
+
+                    <small>Registered accounts</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="user-summary-card">
+
+                <div class="user-summary-icon safe-bg">
+                    ✓
+                </div>
+
+                <div>
+
+                    <span>Active Users</span>
+
+                    <strong>149</strong>
+
+                    <small>Accounts in good standing</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="user-summary-card">
+
+                <div class="user-summary-icon warning-bg">
+                    ⚠
+                </div>
+
+                <div>
+
+                    <span>Under Review</span>
+
+                    <strong>7</strong>
+
+                    <small>Require attention</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="user-summary-card">
+
+                <div class="user-summary-icon risk-bg">
+                    🚨
+                </div>
+
+                <div>
+
+                    <span>High Risk</span>
+
+                    <strong>3</strong>
+
+                    <small>Security concerns</small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- USER SECURITY INSIGHT -->
+
+        <section class="user-security-insight">
+
+            <div class="insight-icon">
+                💡
+            </div>
+
+            <div>
+
+                <strong>AI Security Insight</strong>
+
+                <p>
+                    7 user accounts are currently under review.
+                    FraudGuard detected unusual transaction patterns
+                    that may require administrative verification.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- USER TABLE -->
+
+        <section class="recent-section">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Registered Users</h2>
+
+                    <p>
+                        Account status and transaction activity
+                    </p>
+
+                </div>
+
+
+                <div class="user-count-badge">
+                    156 USERS
+                </div>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>User ID</th>
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+
+                            <th>Account Status</th>
+
+                            <th>Transactions</th>
+
+                            <th>Risk Level</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>USR001</td>
+
+                            <td>Isha</td>
+
+                            <td>isha@example.com</td>
+
+                            <td>
+
+                                <span class="status safe">
+                                    Active
+                                </span>
+
+                            </td>
+
+                            <td>24</td>
+
+                            <td>
+
+                                <span class="user-risk low">
+                                    LOW
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>USR002</td>
+
+                            <td>Rahul</td>
+
+                            <td>rahul@example.com</td>
+
+                            <td>
+
+                                <span class="status safe">
+                                    Active
+                                </span>
+
+                            </td>
+
+                            <td>18</td>
+
+                            <td>
+
+                                <span class="user-risk low">
+                                    LOW
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>USR003</td>
+
+                            <td>Priya</td>
+
+                            <td>priya@example.com</td>
+
+                            <td>
+
+                                <span class="status suspicious">
+                                    Under Review
+                                </span>
+
+                            </td>
+
+                            <td>31</td>
+
+                            <td>
+
+                                <span class="user-risk high">
+                                    HIGH
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>USR004</td>
+
+                            <td>Aman</td>
+
+                            <td>aman@example.com</td>
+
+                            <td>
+
+                                <span class="status safe">
+                                    Active
+                                </span>
+
+                            </td>
+
+                            <td>12</td>
+
+                            <td>
+
+                                <span class="user-risk low">
+                                    LOW
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- USER ACTIVITY -->
+
+        <section class="user-activity-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Recent Account Activity</h2>
+
+                    <p>
+                        Latest security-related events
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="user-activity-list">
+
+
+                <div class="user-activity-item">
+
+                    <div class="user-activity-icon warning">
+                        ⚠️
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Account flagged for review
+                        </strong>
+
+                        <p>
+                            USR003 showed unusual transaction activity.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        12 min ago
+                    </span>
+
+                </div>
+
+
+                <div class="user-activity-item">
+
+                    <div class="user-activity-icon safe">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            User account verified
+                        </strong>
+
+                        <p>
+                            USR001 passed recent security checks.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        28 min ago
+                    </span>
+
+                </div>
+
+
+                <div class="user-activity-item">
+
+                    <div class="user-activity-icon info">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            New user registered
+                        </strong>
+
+                        <p>
+                            A new account was added to FraudGuard.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        1 hr ago
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<!-- FRAUDBOT -->
+
+<div class="fraudbot-wrapper">
+
+    <div class="fraudbot-message">
+
+        <div class="fraudbot-header">
+
+            <div class="fraudbot-avatar">
+                🤖
+            </div>
+
+            <div class="fraudbot-info">
+
+                <strong>FraudBot AI</strong>
+
+                <span>
+                    <i></i>
+                    Security Assistant
+                </span>
+
+            </div>
+
+            <button class="fraudbot-close">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="fraudbot-line"></div>
+
+
+        <div class="fraudbot-content">
+
+            <div class="bot-status">
+
+                <span class="bot-check">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong>
+                        User security scan complete
+                    </strong>
+
+                    <p>
+                        7 accounts require review.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="bot-insight">
+
+                <span>⚡</span>
+
+                <p>
+                    Highest priority:
+                    <strong>USR003 · HIGH</strong>
+                </p>
+
+            </div>
+
+
+            <a href="admin-alerts.html"
+               class="bot-action">
+
+                Review Security Cases
+
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <button class="fraudbot-button"
+            title="FraudBot AI">
+
+        <div class="robot-face">
+
+            <span class="robot-eye"></span>
+
+            <span class="robot-eye"></span>
+
+        </div>
+
+        <span class="bot-online-dot"></span>
+
+    </button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
